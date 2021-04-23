@@ -1,9 +1,11 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import Navbar from './components/Navbar';
+import './App.css';
 
 
 function App() {
   return (
-    <h2>Norma Cruz</h2>
+   <Navbar />
   );
 }
 
