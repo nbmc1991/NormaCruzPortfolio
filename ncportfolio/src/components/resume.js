@@ -6,7 +6,7 @@ class Resume extends Component {
     render (){
         return (
             <Card shadow={0} style={{width: '512px', margin: 'auto'}}>
-            <CardTitle style={{color: '#ff', height: '176px', background: 'url(http://www.getmdl.io/assets/demos/welcome_card.jpg) center / cover'}}>Welcome</CardTitle>
+            <CardTitle style={{color: '#ff', height: '176px', background: 'url(https://github.com/nbmc1991/NormaCruzPortfolio/blob/master/ncportfolio/src/NCresume.png) center / cover'}}>Welcome</CardTitle>
             <CardText>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Mauris sagittis pellentesque lacus eleifend lacinia...
