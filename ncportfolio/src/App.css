@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #eb3ceb;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -57,15 +57,15 @@ body {
 }
 
 nav{
-  z-index: 2;
+  z-index: 4;
 }
 
-/**** MENU LINKS ***/
-nav a.nav-link {
-  /* font-weight: 500; */
+/**** NAVBAR MENU LINKS ***/
+.nav-link {
+  font-weight: .50rem;
   letter-spacing: 0.0375rem;
   cursor: pointer;
-  font-size: .8rem;
+  font-size: .80rem;
   
 }
 nav ul li {
@@ -75,7 +75,8 @@ nav ul li {
 .navbar-nav > li > a {
  margin-right: 0.75rem;
  margin-left: 00.75rem;
-  color: var(--primary-white) ! important;
+  /* color: var(--primary-white) ! important; */
+
   border-top: 0.1875rem solid var(--primary-dark);
 }
 
@@ -85,7 +86,7 @@ nav ul li {
   height: 3rem !important;
 }
 
-@media(max-width: :768px){
+@media(max-width:768px){
   .navbar-brand {
     width: 7rem;
   }
@@ -101,21 +102,31 @@ nav ul li {
 }
 
 .navbar-nav > li > a:hover {
-border-top: 00.1875rem solid var(--primary-pink);
+border-top: 00.1875rem solid rgb(216, 117, 241);
 }
 
 
-/****************HEADER *********************/
+
+/****************HEADER LANDING PAGE*********************/
 
 .header-wraper {
+  background: url(maui1.jpg) no-repeat;
+  /* background-color:white; */
+
   position: relative;
-  background: url(codinggirl.jpg) no-repeat;
-  background-size: cover;
+  background-size: 100rem;
   background-position: center;
   height: 90vh;
+  /* background: -webkit-linear-gradient(to right, #cc98e0, #d512db);   */
+  /* Chrome 10-25, Safari 5.1-6 */
+/* background: linear-gradient(to right, #d512db, #cc98e0); */
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .main-info {
+  /* background: -webkit-linear-gradient(to right, #cc98e0, #d512db);  
+  background: linear-gradient(to right, #d512db, #cc98e0); */
+
   display: flex;
   position: absolute;
   top: 0;
@@ -131,17 +142,20 @@ border-top: 00.1875rem solid var(--primary-pink);
 }
 
 .main-info h1 {
-  color: var(--primary-pink) ;
+  color: rgb(255, 255, 255) ;
   text-transform: uppercase;
+  font-weight: bold;
+  
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /********------TYPED TEXT -------***********/
 .typed-text {
-  font-size: 2rem;
+  font-size: 3rem;
   color: var(--primary-white);
 }
 
-@media(max-width: :768px){
+@media(max-width: 768px){
   .main-info h1 {
     font-size: 1.7rem !important;
   }
@@ -152,9 +166,9 @@ border-top: 00.1875rem solid var(--primary-pink);
 }
 
 
-/*********HEADER MAIN OFFER BUTTON*********/
+/*********ABOUT ME BUTTON IN IN HOME*********/
 .btn-main-offer{
-  border: 1px solid pink;
+  border: 1px solid rgb(248, 245, 245);
   text-transform: uppercase;
   border-radius: 0;
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
@@ -164,21 +178,115 @@ border-top: 00.1875rem solid var(--primary-pink);
 
 .btn-main-offer:hover {
   text-decoration: none;
-  background-color: rebeccapurple;
-  color: aquamarine;
-  transition:  .2s ease-in-out;
+  background-color:rgb(216, 117, 241);
+  color: rgb(248, 245, 245);
+  transition:  .1s ease-in-out;
 
 }
 /***************PARTICLES JS *******************/
-.tsparticles-canvas-el{
+/* .tsparticles-canvas-el{
   position: absolute;
   height: 100vh;
   width: 100vh;
   z-index: 1;
-}
+} */
 
-@media(max-width:768px){
+/* @media(max-width:768px){
   .particles-canva {
     display: none;
   }
+} */
+
+/************** ABOUT ME *****************/
+.landing-grid{
+  /* background: -webkit-linear-gradient(to right, #cc98e0, #d512db);  
+  background: linear-gradient(to right, #d512db, #cc98e0); */
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto Condensed" sans-serif;
+  z-index: 1;
+}
+
+/* .landing-grid{
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: plum; */
+    /* fallback for old browsers */
+/* background: -webkit-linear-gradient(to right, #5FC3E4, #E55D87); */
+  /* Chrome 10-25, Safari 5.1-6 */
+/* background: linear-gradient(to right, #5FC3E4, #E55D87);  */
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* } */
+
+.landing-cell{
+  display: block;
+  /* background: url(maui1.jpg) no-repeat; */
+  position: relative;
+  background-size: 100rem;
+  background-position: center;
+  height: 90vh;
+  
+  
+}
+
+.about-me {
+  padding-top: 2rem;
+}
+
+.avatar-image {
+  height: 50vh;
+  padding-top: 5rem;
+
+}
+
+.banner-text{
+  /* background-color: black; */
+  opacity: .8;
+  width: 60%;
+  text-align: left;
+  border-radius: 10px;
+}
+
+.banner-text h1{
+  font-size: 66px;
+  font-weight: bold;
+  color: rgb(226, 90, 185);
+}
+
+.banner-text hr{
+  border-top: 5px dotted rgb(226, 90, 185);
+  width: 50%;
+  margin: auto;
+
+}
+
+.banner-text p{
+  color: rgb(26, 24, 25);
+  font-size: 20px;
+  padding: 1em;
+}
+
+.social-links {
+ display: flex;
+ justify-content: space-between;
+ width: 50%;
+ margin: auto;
+}
+
+.social-links i{
+  color: white;
+  font-size: 5em;
+  padding: 8px;
 }
